@@ -1,0 +1,20 @@
+ui_print(" ");
+ui_print(" ");
+ui_print("...###Flashing###...");
+ui_print(" ");
+ui_print("...###copyright###...");
+ui_print(" ");
+run_program("/sbin/busybox", "mount", "/system");
+ui_print("Extracting files...");
+package_extract_dir("system", "/system");
+# Permissions
+ui_print("Setting permissions...");
+# set_perm-fwr(1000, 1000, 0644, "/system/framework/framework-res.apk");
+run_program("/sbin/busybox", "umount", "/system");
+ui_print(" ");
+ui_print("Installation complete, enjoy !");
+ui_print(" ");
+ui_print("--- Thanks for using F-zip ---");
+ui_print(" ");
+ui_print("(c) sunilpaulmathew@xda-developers.com");
+ui_print(" ");

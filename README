@@ -1,0 +1,8 @@
+This is an automated script to make a recovery flashable pixel-style framework. This script utilizes my f-zip recovery flashable zip creator project as a base.
+
+How-to-use?
+1.	clone or download this repo into your Linux PC or Android device.
+2.	copy the “framework-res.apk” from Lineage-OS in to "working" folder.
+3.	Edit make.sh (if necessary).
+4.	run ". make.sh" (in Linux) or “sh fzip.sh” (in android).
+5.	The recovery flashable zip file will be generated in the root folder
